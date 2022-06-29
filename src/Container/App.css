@@ -1,7 +1,19 @@
 .App {
   text-align: center;
 }
-
+h2{
+  font-size: 28px;
+  font-family: Arial;
+  font-weight: 500;
+}
+button{
+  width: 110px;
+  padding: 10px 0;
+  background-color: crimson;
+  color:white;
+  border-radius: 5px;
+  font-size: 18px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
