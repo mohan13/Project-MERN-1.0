@@ -10,7 +10,7 @@ const Banner = () => {
     },
   ];
   return (
-    <div>
+    <div className="border border-indigo-600">
       {BannerData?.map((val, i) => {
         return (
           <div key={i}>
@@ -19,7 +19,9 @@ const Banner = () => {
                 backgroundImage: `url(${val.Image})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
+                backgroundColor:"rgba(0,0,0,0.4)"
               }}
+              className="border-red-300"
             >
               <div className="flex flex-col text-left  w-2/4 ml-6 py-8 ">
                 <div className=" text-xl">{val.title}</div>
