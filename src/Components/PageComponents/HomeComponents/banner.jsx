@@ -10,7 +10,7 @@ const Banner = () => {
     },
   ];
   return (
-    <div className="border border-indigo-600">
+    <div className="drop-shadow-md">
       {BannerData?.map((val, i) => {
         return (
           <div key={i}>
