@@ -21,12 +21,11 @@ const Banner = () => {
                 backgroundSize: "cover",
                 backgroundColor:"rgba(0,0,0,0.4)"
               }}
-              className="border-red-300"
             >
-              <div className="flex flex-col text-left  w-2/4 ml-6 py-8 ">
-                <div className=" text-xl">{val.title}</div>
-                <h2 className=" my-2 text-4xl">{val.subTitle}</h2>
-                <div className=" leading-6 text-md">{val.para}</div>
+              <div className="flex flex-col w-56 text-left  md:w-2/4 md:ml-6 md:py-8 ">
+                <div className="text-sm text-pink-600 md:text-lg">{val.title}</div>
+                <h2 className=" my-2 text-lg md:text-4xl">{val.subTitle}</h2>
+                <div className=" leading-6 text-sm">{val.para}</div>
                 <button className="rounded-sm w-40 mt-4 p-2 ">BOOK NOW</button>
               </div>
             </div>

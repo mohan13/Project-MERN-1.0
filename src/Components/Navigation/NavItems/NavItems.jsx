@@ -7,7 +7,7 @@ const NavItems = () => {
         {
             NavData?.map((val,index)=>{
                 return(
-                    <div key={index} className='text-red-400 text-md'>
+                    <div key={index} className='text-pink-600 text-md'>
                         <NavItem icon={val.icon} path={val.path} title={val.title}/>
                         </div>
                 )
