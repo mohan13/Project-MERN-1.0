@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../../Images/hero.jpg";
+import Hero from "../../Images/python1.webp";
 const Banner = () => {
   const BannerData = [
     {
@@ -13,20 +13,35 @@ const Banner = () => {
     <div className="drop-shadow-md">
       {BannerData?.map((val, i) => {
         return (
-          <div key={i}>
-            <div
-              style={{
-                backgroundImage: `url(${val.Image})`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundColor:"rgba(0,0,0,0.4)"
-              }}
+          <div key={i} className='w-full'>
+            {/* <div
+              // style={{
+              //   backgroundImage: `url(${val.Image})`,
+              //   backgroundRepeat: "no-repeat",
+              //   backgroundSize: "cover",
+              //   backgroundColor: "rgba(0,0,0,0.4)",
+              // }}
+              className="w-screen"
             >
-              <div className="flex flex-col w-56 text-left  md:w-2/4 md:ml-6 md:py-8 ">
-                <div className="text-sm text-pink-600 md:text-lg">{val.title}</div>
-                <h2 className=" my-2 text-lg md:text-4xl">{val.subTitle}</h2>
-                <div className=" leading-6 text-sm">{val.para}</div>
-                <button className="rounded-sm w-40 mt-4 p-2 ">BOOK NOW</button>
+              <div className="flex flex-col text-left md:w-2/4 md:ml-6 md:py-8 ">
+                <div className="text-sm pr-16 md:text-lg">
+                  <h1 className="text-pink-600">{val.title}</h1>
+                  <h2 className=" my-2 text-lg   md:text-4xl">
+                    {val.subTitle}
+                  </h2>
+                  <p className=" leading-6 text-sm">{val.para}</p>
+                </div>
+                <button className="rounded-sm my  ">BOOK NOW</button> */}
+            <div className="grid grid-cols-2  items-center">
+              <div className="text-lg f text-left">
+               <h1 className="text-pink-600">{val.title}</h1>
+               <h2 className="text-lg my-2 md:text-4xl"> {val.subTitle}</h2>
+                <p className="leading-6 text-sm">
+                {val.para}
+                </p>
+              </div>
+              <div className="h-32 ">
+                <img className="h-full mx-auto" src={val.Image} alt="" />
               </div>
             </div>
           </div>

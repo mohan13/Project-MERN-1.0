@@ -9,7 +9,7 @@ const toolbar = () => {
         
         <img className="bg-black" src={Logo} alt="" />
       </div>
-      <div className="md:hidden ">< BiMenu/> </div>
+      {/* <div className="md:hidden ">< BiMenu/> </div> */}
       <div className="hidden md:flex">
         <NavItems />
       </div>
