@@ -13,7 +13,7 @@ const Banner = () => {
     <div className="drop-shadow-md">
       {BannerData?.map((val, i) => {
         return (
-          <div key={i} className='w-full'>
+          <div key={i} className="w-full">
             {/* <div
               // style={{
               //   backgroundImage: `url(${val.Image})`,
@@ -32,16 +32,27 @@ const Banner = () => {
                   <p className=" leading-6 text-sm">{val.para}</p>
                 </div>
                 <button className="rounded-sm my  ">BOOK NOW</button> */}
-            <div className="grid grid-cols-2  items-center">
-              <div className="text-lg f text-left">
-               <h1 className="text-pink-600">{val.title}</h1>
-               <h2 className="text-lg my-2 md:text-4xl"> {val.subTitle}</h2>
-                <p className="leading-6 text-sm">
-                {val.para}
-                </p>
+            <div className="grid grid-cols-1  py-4 md:grid-cols-3 lg:p-4 lg:items-center bg-stone-200">
+              <div className=" md:col-span-2 lg:pr-28 text-left ">
+                <h1 className="text-pink-600 lg:text-xl">{val.title}</h1>
+                <h1 className="text-2xl  md:text-4xl lg:text-5xl"> {val.subTitle}</h1>
+                <p className="leading-6 text-sm lg:text-xl mb-2">{val.para}</p>
+                <button className="rounded-sm py-1 my-2  ">BOOK NOW</button>
               </div>
-              <div className="h-32 ">
-                <img className="h-full mx-auto" src={val.Image} alt="" />
+              <div className="grid gap-3 grid-cols-1 lg:grid-cols-3 ">
+                <div className="lg:h-60 md:col-span-2 lg:mt-4 lg:mt-4">
+                  <img className="md:h-full mx-auto" src={val.Image} alt="" />
+                </div>
+                <div className="grid grid-cols-2 lg:grid-cols-1 gap-3 lg:mr-1 text-left md:mb-12">
+                  <div className="bg-pink-600 pl-2 lg:py-1 lg:px-1 leading-8">
+                    <h4 className="text-sm ">Course Start</h4>
+                    <h1>20 Feb. 2012</h1>
+                  </div>
+                  <div className="bg-yellow-300 leading-8 pl-2">
+                    <h3>Course Fee</h3>
+                    <h1>Rs. 20000</h1>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
