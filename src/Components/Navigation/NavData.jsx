@@ -7,6 +7,6 @@ export const NavData = [
     path: "/",
   },
   { title: "About", path: "/about" },
-  { title: "Courses", path: "/" },
+  { title: "Courses", path: "/course" },
   { title: "Contact", path: "/" }
 ];
