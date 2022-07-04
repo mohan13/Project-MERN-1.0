@@ -32,7 +32,7 @@ const Banner = () => {
                   <p className=" leading-6 text-sm">{val.para}</p>
                 </div>
                 <button className="rounded-sm my  ">BOOK NOW</button> */}
-            <div className="grid grid-cols-1  py-4 md:grid-cols-3 lg:p-4 lg:items-center bg-stone-200">
+            <div className="grid grid-cols-1  p-4 md:grid-cols-3 lg:p-4 lg:items-center bg-stone-200">
               <div className=" md:col-span-2 lg:pr-28 text-left ">
                 <h1 className="text-pink-600 lg:text-xl">{val.title}</h1>
                 <h1 className="text-2xl  md:text-4xl lg:text-5xl"> {val.subTitle}</h1>
