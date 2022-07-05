@@ -2,7 +2,7 @@ import React from 'react'
 // import PropTypes from 'prop-types'
 const Icon = ({i}) => {
   return (
-    <div className="w-8 h-8 hover:cursor-pointer">{i}</div>
+    <div className="w-6 h-6 mr-2 md:w-8 md:h-8 hover:cursor-pointer">{i}</div>
   )
 }
 // Icon.PropTypes ={

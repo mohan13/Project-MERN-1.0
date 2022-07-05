@@ -2,7 +2,7 @@ import React from "react";
 import lImage from "../../../Images/hero.jpg";
 const Lbanner = () => {
   return (
-    <div className="text-left">
+    <div className="text-left p-4">
       <div className="shadow-md my-10">
         <img src={lImage} alt="" />
       </div>

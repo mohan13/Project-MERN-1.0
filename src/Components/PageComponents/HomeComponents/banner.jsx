@@ -10,10 +10,10 @@ const Banner = () => {
     },
   ];
   return (
-    <div className="drop-shadow-md">
+    <div className="drop-shadow-md w-screen">
       {BannerData?.map((val, i) => {
         return (
-          <div key={i} className="w-full">
+          <div key={i}>
             {/* <div
               // style={{
               //   backgroundImage: `url(${val.Image})`,

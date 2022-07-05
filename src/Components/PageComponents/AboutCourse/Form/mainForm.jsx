@@ -25,44 +25,31 @@ const MainForm = () => {
           location: "",
           message: "",
         }}
-        validationSchema={ schema }
+        validationSchema={schema}
         render={({ errors, touched, handleSubmit }) => {
           return (
-            <div>
-                {/* <Form
-                      onSubmit={handleSubmit}
-                      className="flex text-left flex-col"
-                    >
-                      <label>UserNmae</label>
-                      <Field
-                        type='text'
-                        name='username'
-                        className="border"
-                      />
-                      <ErrorMessage name='username' component={"div"} />
-                      <button>submit</button>
-                    </Form> */}
+            <Form onSubmit={handleSubmit}>
               {RformData?.map((val, i) => {
                 return (
-                  <div key={i} className='my-4'>
-                    <Form
-                      onSubmit={handleSubmit}
-                      className="flex text-left flex-col"
-                    >
-                      <label className="text-md mb-2">{val.label}</label>
-                      <Field
-                        type={val.type}
-                        name={val.key}
-                        className="border rounded-sm bg-stone-200 outline-none h-8"
-                      />
-                      <ErrorMessage name={val.key} component={"div"} className="text-red-500" />
-                    </Form>
+                  <div key={i} className='flex flex-col text-left mt-4'>
+                    <label className="text-md mb-2">{val.label}</label>
+                    <Field
+                      type={val.type}
+                      name={val.key}
+                      className="border rounded-sm bg-stone-200 outline-none h-8"
+                    />
+                    <ErrorMessage
+                      name={val.key}
+                      component={"div"}
+                      className="text-red-500"
+                    />
                   </div>
                 );
               })}
-                      <button type='submit' className="bg-red-300">Submit</button>
+              <button type="submit" className="w-full mt-4 py-2 bg-pink-600">Sign in</button>
 
-            </div>
+            </Form>
+            
           );
         }}
       />
