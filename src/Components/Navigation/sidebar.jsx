@@ -1,8 +1,11 @@
 import React from 'react'
+import NavItems from "./NavItems/NavItems";
 
 const sidebar = () => {
   return (
-    <div>sidebar</div>
+    <div >
+       <div className="flex "> <NavItems from='sidebar'/></div>
+    </div>
   )
 }
 
